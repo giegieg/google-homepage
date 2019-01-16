@@ -1,15 +1,30 @@
 body {
     font-family: arial,sans-serif;
 }
-
 .header {
+    height: 24px;
     text-align: right;
-    font-size: 13px;
+    font-size: 10pt;
 } 
-.logo {
-    background-color: white;
-    margin-top: 150px;
-    text-align: center;
+ul {
+    list-style-type: none ;
+    margin: 10px 10px;
+    padding: 0;
+}
+li {
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+#products {
+    all: unset;
+    
+    display: block;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    right: 15px;
+    top: 6px;
 }
 a:link {
     color: black;
@@ -21,21 +36,32 @@ a:hover {
     background-color: transparent;
     text-decoration: underline;
 }
-  ul {
-    list-style-type: none ;
-    margin: 20px 10px;
-    padding: 0;
-    overflow: hidden;
+.logo {
+    background-color: white;
+    margin-top: 150px;
+    text-align: center;
 }
-ul li {
-    float: right;
-    padding: 0px 10px;
-  }
-#products{
-    all: unset;
-    float: right;
+.search_field {
+    margin: 20px auto;
     display: block;
-    width: 15px;
-    height: 15px;
-    margin-top: 1px;
-  }
+    text-align: center;
+    color: grey;   
+    border: none;
+ 
+    width: 600px;
+    height: 44px;
+}
+.search_field input {
+    height: 42px;
+    width: 504px;
+    border-color: transparent;
+    border-radius: 20px;
+    padding: 0 20px;
+    font-size: 15px;
+    font-family: arial, sans-serif;
+    background-image: url(https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png);
+    background-repeat: no-repeat;
+    background-color: #EEF0F1;
+    background-position: 460px 8px;
+    background-size: 22px;
+}
